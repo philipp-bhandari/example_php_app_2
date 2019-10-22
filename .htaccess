@@ -1,0 +1,11 @@
+RewriteEngine On
+ 
+## Unless directory, remove trailing slash
+RewriteCond %{ENV:REDIRECT_STATUS} !200
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,NE,L]
+ 
+## forward all requests to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [L]

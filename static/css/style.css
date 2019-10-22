@@ -1,0 +1,30 @@
+.container-fluid h2 {
+    margin: 20px 0 20px 0;
+}
+
+.manage_buttons {
+    margin-left: 20px;
+}
+
+.card-body .form-group {
+    margin: 0;
+}
+
+.container-fluid table button.btn-dark {
+    margin: 0;
+}
+
+p.errors {
+    color: red;
+}
+.container-fluid p.success {
+    color: forestgreen;
+}
+
+.container-fluid table.table {
+    margin-top: 30px;
+}
+
+.file_input {
+    padding: 20px;
+}
